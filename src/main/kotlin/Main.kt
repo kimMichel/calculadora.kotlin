@@ -20,9 +20,11 @@ fun main(args: Array<String>) {
             if (option != null) {
                 operation.operation(firstNumber, secondNumber, option)
             }
-        }
-    } else println("THE NUMBERS CANNOT BE A NULL VALUE.")
+        } else errorMessage()
+    } else errorMessage()
 
+}
 
-
+fun errorMessage() {
+   println("THE NUMBERS CANNOT BE A NULL VALUE. PLEASE ENTER A VALID NUMBER.")
 }
